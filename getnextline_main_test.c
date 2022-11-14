@@ -1,13 +1,15 @@
 #include "get_next_line.h"
 #include <stdio.h>
 #include <fcntl.h>
+#include <unistd.h>
+#include <stdlib.h>
 
 int	main()
 {
 	int		fd;
 	char	*line;
 
-	fd = open("file", O_RDONLY)
+	fd = open("file", O_RDONLY);
 	while(1)
 	{
 		line = get_next_line(fd);
